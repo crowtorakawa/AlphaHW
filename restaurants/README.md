@@ -40,13 +40,13 @@ Development tool
 1. 打開你的 terminal，Clone 此專案至本機電腦
 
 ```
-git clone https://github.com/pierceshih15/restaurantList.git
+git clone https://github.com/pierceshih15/restaurantList.git(https://github.com/crowtorakawa/AlphaHW/edit/main/restaurants)
 ```
 
 2. 開啟終端機(Terminal)，進入存放此專案的資料夾
 
 ```
-cd restaurantList
+cd restaurants
 ```
 
 3. 安裝 npm 套件
