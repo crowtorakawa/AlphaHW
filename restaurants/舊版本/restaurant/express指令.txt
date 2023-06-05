@@ -1,0 +1,5 @@
+npm init -y
+npm install express@4.16.4
+
+
+npm i express-handlebars@3.0.0

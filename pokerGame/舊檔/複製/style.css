@@ -1,0 +1,28 @@
+#cards{
+    display:flex;
+    flex-wrap: wrap;
+}
+.card{
+    flex: 7% 0 1 ;
+    height: 8vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    border: solid 2px #e0e0e0;
+
+    margin: 2px;
+    font-size: 10px;
+    box-sizing: border-box;
+    
+}
+.card img{
+    max-width: 30%;
+    align-self: center;
+}
+.card p:last-child{
+    transform: rotate(180deg);
+}
+.back{
+    background: url('./cardBack.png');
+    background-size: cover;
+}

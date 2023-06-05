@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#cards{
+    display:flex;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 30px auto;
+}
+.card{
+    flex: 7% 1 1 ;
+    height: 8vw;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    border: solid 2px #e0e0e0;
+    margin: 2px;
+    font-size: 2vw;
+    box-sizing: border-box;
+    
+}
+.card img{
+    max-width: 30%;
+    align-self: center;
+}
+.card p:last-child{
+    transform: rotate(180deg);
+}
+.back{
+    background: url('./cardBack.png');
+    background-size: cover;
+}
+.paired {
+    background-color: #dae0e3;
+  }
+
+  /* ------------------------------------- */
+  #header {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 85%;
+  }
+  #header .title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #header .title img {
+    max-width: 3em;
+  }
+  #header .title h2 {
+    padding-left: 0.5em;
+  }
+  #header .score {
+    margin: 0;
+    color: #6c90ac;
+  }
+  #header .tried {
+    margin-top: 0;
+  }
+  /*--------------------------------------------------*/
+  .wrong {
+    animation-name: wrongAnimation;
+    animation-duration: 0.2s;
+    animation-iteration-count: 5;
+  }
+  @keyframes wrongAnimation {
+    to {
+      border: 2px solid #ffd54f;
+    }
+  }
+  /*--------------------------------------------------*/
+  .completed {
+    position: absolute;
+    z-index: 999;
+    top: 33vh;
+    background-color: RGBA(232, 246, 254, 0.8);
+    border-top: #ffd54f 5px solid;
+    border-bottom: #ffd54f 5px solid;
+    width: 100vw;
+    padding: 50px 0;
+  }
+  .completed > p {
+    font-size: 1.5em;
+    color: blue;
+    text-align: center;
+    margin: 0;
+  }
+  .completed > p:first-child {
+    font-size: 3em;
+    font-weight: 700;
+    color: red;
+  }
+  .finishImg01{
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left:100px;
+  }
+  .finishImg02{
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    right:100px;
+  }
